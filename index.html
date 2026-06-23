@@ -16,105 +16,229 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <title>Home</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio-aiGen.css" />
   </head>
   <body>
+
     <header class="header-container">
       <nav class="nav-container">
-        <a class="nav-logo" href="/">
-          <p>Someday Under the Blue Sky</p>
+        <a class="nav-logo" href="index.html">
+          <p>Portfolio — Syafi</p>
         </a>
         <ul class="nav-list">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="storylist.html">Story</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
+          <li><a href="home.html">Stories ↗</a></li>
+          <!-- <li><a href="storylist.html">Story List</a></li>
+          <li><a href="about.html">About</a></li> -->
         </ul>
       </nav>
     </header>
 
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-left">
-          <h1 data-aos="fade-up">Shallow Light Upon the Sea</h1>
-          <p data-aos="fade-up">Story Teller</p>
-          <p data-aos="fade-up">Tells tales</p>
-        </div>
-        <div class="hero-right">
-          <!-- <h1>Some Picture or something idk</h1> -->
-        </div>
-      </div>
-    </section>
+    <div class="pf-hero-split">
 
-    <section class="passage-section">
-      <div class="passage-container">
-        <div class="passage-left"></div>
-        <div class="passage-right">
-          <div class="passage-content">
-            <h1>Passing of Passage</h1>
-            <p data-aos="fade-up">
-              The breeze of wind had always accompanied me everyday, the smell
-              of sea and the never-ending horizon guided the way. They came to
-              me for a greeting, something that would always be there smiling.
-              Like glittering of sand, soft and warmed by the sun, the emotions
-              that last and will forever stand. The stars had spoken to me
-              through the ocean, they asked me in return to write them stories
-              and put them into motion. Tales that could reach even the deepest
-              of the heart, words that would not be less than an art. Playing
-              like a symphony, dancing as if a memory, to bring something that
-              is happy. So, I decided to create these tales to tell you, one day
-              you might have the same dream as I do. A shallow light upon the
-              sea, hollow but colorful for the eyes to see, started to row my
-              soul to where it should be.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="pf-split-left">
+        <div class="pf-photo-placeholder"></div>
 
-    <section class="showcase-section">
-      <div>
-        <h1 data-aos="fade-up">Story Showcase here</h1>
-      </div>
-    </section>
+        <!-- Identity — name and links sit under the photo -->
+        <section class="portfolio-identity">
+          <h1>Syafi (Fi) Nurhakim</h1>
+          <p class="portfolio-title">Quality Engineer (QE) &middot; Bilingual QA Engineer</p>
+          <!-- <p class="portfolio-subline">Test Design / Planning &middot; Automation &middot; Framework Maintainance & Design &middot; </p> -->
+          <p class="portfolio-location">Tokyo, Japan</p>
+          <div class="portfolio-links">
+            <a href="https://www.linkedin.com/in/syafi-nurhakim-7746aa230/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="portfolio-contact">
+            <p>nurhakimsyafi0904@gmail.com</p>
+            <p>+81 90-4283-7540</p>
+          </div>
+        </section>
 
-    <section class="future-section">
-      <div class="future-container">
-        <div class="future-left">
-          <div class="future-content">
-            <h1>Salty Path</h1>
-            <span>25 December 2025</span>
-            <p data-aos="fade-up">
-              I have been working on an original fantasy novel for quite awhile
-              now, however I have yet to find a publisher. The whole plot have
-              yet to be finished, I wish to revise this so it would be very fun
-              for people to enjoy. <br /><br />
-              The story takes place in a future world where the sea becomes a
-              deadly place due to the changing nature of earth and the damage
-              humanity has done. Half of the population in the sea was lost, it
-              became a place not kind to men. After moving away to a place where
-              the sky still lit the ocean while following her father's work. She
-              was reminded of the beauty the sea once held. Near the shore
-              laughing happily, a stupid looking young boy row the his tiny boat
-              away to the deadly sea. A young sailor boy with dreams to meet the
-              whale.
-            </p>
+        <!-- Certifications (left panel) -->
+        <section class="portfolio-section pf-left-section">
+          <h2>Certifications</h2>
+          <ul class="pf-cert-list">
+            <li class="pf-cert-item">
+              <span class="pf-cert-name">ISTQB Foundation Level (2024)</span>
+            </li>
+            <li class="pf-cert-item">
+              <span class="pf-cert-name">ISTQB Advanced Test Automation Engineering (2026)</span>
+            </li>
+            <li class="pf-cert-item">
+              <span class="pf-cert-name">JLPT N3 (2022)</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="pf-split-right">
+
+        <!-- About -->
+        <section class="portfolio-section">
+          <h2>About</h2>
+          <p>
+            QA Engineer based in Japan with experience across web, mobile, automation, and test tooling.
+            I have worked in bilingual teams and across multiple stakeholders, with a growing focus on
+            framework design, workflow improvement, and technical QA ownership. I am especially interested
+            in building maintainable automation systems, improving team productivity, and continuing toward
+            a more SDET- and infrastructure-oriented path.
+          </p>
+        </section>
+
+        <!-- Specialties -->
+        <section class="portfolio-section">
+          <h2>Specialties</h2>
+          <div class="pf-badges">
+            <span class="pf-badge">QA Automation</span>
+            <span class="pf-badge">Test Framework Design</span>
+            <span class="pf-badge">Web / Mobile QA</span>
+            <span class="pf-badge">API Testing</span>
+            <span class="pf-badge">Tooling &amp; Workflow Improvement</span>
+            <span class="pf-badge">CI/CD Integration</span>
+            <span class="pf-badge">AI-Assisted QA Exploration</span>
           </div>
-        </div>
-        <div class="future-right">
-          <div class="future-img" data-aos="fade-down">
-            <img src="/images/future-cover.jpg" alt="Future novel plan" />
+        </section>
+
+        <!-- Stack -->
+        <section class="portfolio-section">
+          <h2>Stack</h2>
+          <div class="pf-stack-groups">
+
+            <div class="pf-stack-group">
+              <span class="pf-stack-group-label">Languages</span>
+              <div class="pf-badges">
+                <span class="pf-badge">Python</span>
+                <span class="pf-badge">Swift</span>
+                <span class="pf-badge">JavaScript</span>
+                <span class="pf-badge">SQL</span>
+                <span class="pf-badge">Bash</span>
+              </div>
+            </div>
+
+            <div class="pf-stack-group">
+              <span class="pf-stack-group-label">Automation / Testing</span>
+              <div class="pf-badges">
+                <span class="pf-badge">Playwright</span>
+                <span class="pf-badge">Selenium</span>
+                <span class="pf-badge">Appium</span>
+                <span class="pf-badge">Robot Framework</span>
+                <span class="pf-badge">pytest</span>
+                <span class="pf-badge">REST API Testing</span>
+              </div>
+            </div>
+
+            <div class="pf-stack-group">
+              <span class="pf-stack-group-label">Tools / Platforms</span>
+              <div class="pf-badges">
+                <span class="pf-badge">GitHub Actions</span>
+                <span class="pf-badge">Jenkins</span>
+                <span class="pf-badge">Git</span>
+                <span class="pf-badge">Postman</span>
+                <span class="pf-badge">Docker</span>
+                <span class="pf-badge">Xcode</span>
+              </div>
+            </div>
+
           </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <!-- Projects & Explorations — full-width section below hero split -->
+    <section class="pf-projects-section">
+      <div class="pf-projects-inner">
+
+        <h2>Projects &amp; Explorations</h2>
+        <div class="pf-cards">
+
+          <div class="pf-card" data-card-id="work">
+            <div class="pf-card-body">
+              <div class="pf-card-header-row">
+                <p class="pf-card-category">Professional</p>
+                <button class="pf-card-toggle" aria-expanded="false">+</button>
+              </div>
+              <h3>Work</h3>
+              <p class="pf-card-summary">QA engineering across web, mobile, and automation in Japan — bilingual teams, multiple stakeholders, growing ownership of tooling and frameworks.</p>
+              <div class="pf-card-tags">
+                <span>QA</span><span>Automation</span><span>Mobile</span><span>Japan</span>
+              </div>
+            </div>
+            <div class="pf-card-expanded" hidden>
+              <ul class="pf-work-list">
+                <li class="pf-work-item">
+                  <div class="pf-work-header">
+                    <span class="pf-work-company">Company 1</span>
+                    <span class="pf-work-period">20XX — Present</span>
+                  </div>
+                  <p class="pf-work-role">Role / Title</p>
+                </li>
+                <li class="pf-work-item">
+                  <div class="pf-work-header">
+                    <span class="pf-work-company">Company 2</span>
+                    <span class="pf-work-period">20XX — 20XX</span>
+                  </div>
+                  <p class="pf-work-role">Role / Title</p>
+                </li>
+                <li class="pf-work-item">
+                  <div class="pf-work-header">
+                    <span class="pf-work-company">Company 3</span>
+                    <span class="pf-work-period">20XX — 20XX</span>
+                  </div>
+                  <p class="pf-work-role">Role / Title</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pf-card" data-card-id="projects">
+            <div class="pf-card-body">
+              <div class="pf-card-header-row">
+                <p class="pf-card-category">Personal Projects</p>
+                <button class="pf-card-toggle" aria-expanded="false">+</button>
+              </div>
+              <h3>Projects</h3>
+              <p class="pf-card-summary">Side projects and explorations — automation frameworks, AI-assisted tooling experiments, and things built for learning.</p>
+              <div class="pf-card-tags">
+                <span>Playwright</span><span>Python</span><span>pytest</span><span>Experimental</span>
+              </div>
+            </div>
+            <div class="pf-card-expanded" hidden>
+              <div class="pf-card-writeup">
+                <p>Write-up coming soon — describe your projects, what you built, what you learned, and what's in progress.</p>
+              </div>
+              <ul class="pf-card-links">
+                <li><a href="#">Hybrid Automation Framework →</a></li>
+                <li><a href="#">AI-Assisted QA Experiments →</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pf-card" data-card-id="research">
+            <div class="pf-card-body">
+              <div class="pf-card-header-row">
+                <p class="pf-card-category">Research</p>
+                <button class="pf-card-toggle" aria-expanded="false">+</button>
+              </div>
+              <h3>Research &amp; Interests</h3>
+              <p class="pf-card-summary">Accessibility ideas, human-centered software quality, recommender systems, and data-informed QA concepts.</p>
+              <div class="pf-card-tags">
+                <span>Research</span><span>Accessibility</span><span>Data</span>
+              </div>
+            </div>
+            <div class="pf-card-expanded" hidden>
+              <div class="pf-card-writeup">
+                <p>Write-up coming soon — share what you're reading, exploring, or thinking about.</p>
+              </div>
+              <ul class="pf-card-links">
+                <li><a href="#">Article / Note →</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
@@ -122,9 +246,6 @@
       <p>Live a Life!</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="portfolio-aiGen.js" defer></script>
   </body>
 </html>

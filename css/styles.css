@@ -111,7 +111,6 @@ h1, h2, h3, p {
 
 .hero-container {
     height: inherit;
-    
     display: flex;
     align-items: center;
     justify-content: center;
