@@ -1,6 +1,7 @@
 [
   {
     "slug": "had-i-had-envelope",
+    "type": "linear",
     "title": "Had I Have One More Envelope to Write",
     "series": "Amber Memoirs Series",
     "language": "en",
@@ -10,6 +11,7 @@
   },
   {
     "slug": "voyager-x",
+    "type": "branching",
     "title": "ボイジャーX",
     "series": "Horror Series",
     "language": "ja",
