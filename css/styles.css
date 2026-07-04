@@ -43,6 +43,7 @@ h1, h2, h3, p {
 
 .nav-logo {
     margin-left: 2rem;
+    color: var(--platinum);
 }
 
 .nav-logo p {
@@ -60,6 +61,10 @@ h1, h2, h3, p {
     margin-right: 1rem;
     margin-left: 1rem;
     font-weight: 500;
+}
+
+.nav-list a {
+    color: var(--platinum);
 }
 
 /* Header Mobile */

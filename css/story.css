@@ -106,7 +106,7 @@
     transition: text-decoration-color 0.4s;
 }
 
-.story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
+.story-meta li, .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
     color: var(--rich-black);
 }
 
@@ -274,7 +274,7 @@ footer {
         transition: text-decoration-color 0.4s;
     }
     
-    .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
+    .story-meta li, .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
         color: var(--rich-black);
     }
     
