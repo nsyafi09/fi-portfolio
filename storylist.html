@@ -1,30 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <!-- Special no zoom on phone -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=EB Garamond"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+JP:wght@300;400;700&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
       rel="stylesheet"
     />
 
@@ -32,16 +15,12 @@
 
     <script defer src="index.js"></script>
 
-    <title>Story</title>
+    <title>Stories — Someday Under the Blue Sky</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/story.css" />
     <link rel="stylesheet" href="css/storylist.css" />
 
-    <!-- For Noto JP -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap");
-    </style>
   </head>
   <body>
     <header class="header-container">
@@ -72,11 +51,7 @@
       </div>
       <div class="story-list-container">
         <div class="story-list-card">
-          <div
-            class="story-list-left"
-            onclick="location.href='story.html';"
-            style="cursor: pointer"
-          ></div>
+          <a class="story-list-left" href="story.html"></a>
           <div class="story-list-right">
             <div class="story-data-list">
               <p>
@@ -98,21 +73,11 @@
                 >Author
               </p>
             </div>
-            <div
-              class="story-title-list"
-              data-aos="fade-up"
-              onclick="location.href='story.html';"
-              style="cursor: pointer"
-            >
-              <h1 id="title">Placeholder</h1>
+            <div class="story-title-list" data-aos="fade-up">
+              <a href="story.html"><h1 id="title">Placeholder</h1></a>
             </div>
-            <div
-              class="story-preview"
-              data-aos="zoom-in"
-              onclick="location.href='story.html';"
-              style="cursor: pointer"
-            >
-              <p id="story">Placeholder</p>
+            <div class="story-preview" data-aos="zoom-in">
+              <a href="story.html"><p id="story">Placeholder</p></a>
             </div>
             <div class="story-genre">
               <ul>
@@ -148,10 +113,10 @@
               </p>
             </div>
             <div class="story-title-list" data-aos="fade-up">
-              <h1 id="title">Placeholder</h1>
+              <h1>Placeholder</h1>
             </div>
             <div class="story-preview" data-aos="zoom-in">
-              <p id="story">Placeholder</p>
+              <p>Placeholder</p>
             </div>
             <div class="story-genre">
               <ul>
@@ -168,11 +133,6 @@
       <p>Live a Life!</p>
     </footer>
 
-    <script>
-      const story = document.getElementById("story");
-      const storyString = { content: story.outerHTML };
-      console.log(JSON.stringify(storyString));
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

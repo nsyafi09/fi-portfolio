@@ -64,6 +64,7 @@
 }
 
 .story-list-left {
+    display: block;
     background-image: url(/images/horror-jp.jpg);
     background-size: cover;
     background-position: center;
