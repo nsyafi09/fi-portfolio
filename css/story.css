@@ -1,27 +1,3 @@
-:root {
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
-    --rich-black: #0D1B2A;
-    --oxford-blue: #1B263B;
-    --bdazzled-blue: #415A77;
-    --shadowblue: #778DA9;
-    --platinum: #E0E1DD;
-    --soft-blue: rgb(225,239,242);
-    --soft-white: rgb(247, 247, 247);
-    --soft-grey: rgb(188, 188, 212);
-
-    --transparent-white-back:rgba(255, 255, 255, 0.4);
-
-    --font-playfair: 'Playfair Display', serif;
-    --font-roboto: 'Roboto', sans-serif;
-    --font-garamond: 'EB Garamond', 'serif';
-    --font-noto-jp: 'Noto Serif JP', serif;
-}
-
-/* * {
-    color: var(--rich-black);
-} */
-
 .story-section {
     height: auto;
     min-height: 75vh;
@@ -130,7 +106,7 @@
     transition: text-decoration-color 0.4s;
 }
 
-.story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
+.story-meta li, .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
     color: var(--rich-black);
 }
 
@@ -194,17 +170,6 @@
 }
 
 
-
-/* EXTRA (For Polls) */
-
-.poll-section * {
-    color: var(--rich-black);
-}
-
-.poll-container {
-    margin-right: 5%;
-    margin-left: 5%;
-}
 
 footer {
     margin-top: 26px;
@@ -309,7 +274,7 @@ footer {
         transition: text-decoration-color 0.4s;
     }
     
-    .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
+    .story-meta li, .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a, .story-content * {
         color: var(--rich-black);
     }
     
