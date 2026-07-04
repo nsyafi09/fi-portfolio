@@ -1,20 +1,30 @@
 [
   {
     "slug": "had-i-had-envelope",
+    "type": "linear",
     "title": "Had I Have One More Envelope to Write",
     "series": "Amber Memoirs Series",
     "language": "en",
     "preview": "A nostalgic scent came to mind, an old tale which began to uncover itself to the surface of heart.",
-    "genres": ["Nostalgic", "Heartwarming"],
-    "image": "/images/horror-jp.jpg"
+    "genres": [
+      "Nostalgic",
+      "Heartwarming"
+    ],
+    "image": "/images/horror-jp.jpg",
+    "contentPath": "posts/personal/stories/had-i-had-envelope.md"
   },
   {
     "slug": "voyager-x",
+    "type": "branching",
     "title": "ボイジャーX",
     "series": "Horror Series",
     "language": "ja",
     "preview": "人類初の宇宙探査機「ボイジャーX」。星々のそばを泳ぐという夢を実現するための宇宙への航海の始まりは、宇宙に浮かぶ死体のように無残な姿となり、壊れてしまった。",
-    "genres": ["Sci-fi", "Horror"],
-    "image": "/images/horror-jp.jpg"
+    "genres": [
+      "Sci-fi",
+      "Horror"
+    ],
+    "image": "/images/horror-jp.jpg",
+    "contentPath": "data/personal-stories/voyager-x.json"
   }
 ]

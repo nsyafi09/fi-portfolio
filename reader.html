@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+JP:wght@300;400;700&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/reader.js"></script>
+
+    <title id="page-title">Story — Someday Under the Blue Sky</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/story.css" />
+
+  </head>
+  <body>
+    <header class="header-container" id="nav-root"></header>
+
+    <section class="story-section" lang="ja-jp">
+      <div class="story-meta">
+        <ul id="story-genres"></ul>
+      </div>
+
+      <div class="story-container">
+        <div class="story-data">
+          <p>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="black"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                />
+              </svg> </span
+            ><span id="reader-series"></span>
+          </p>
+        </div>
+        <div class="story-title">
+          <h1 id="title"></h1>
+        </div>
+        <div class="story-content">
+          <div id="story-body"></div>
+        </div>
+        <div class="story-route">
+          <a href="storylist.html">← Back to Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Live a Life!</p>
+    </footer>
+  </body>
+</html>
