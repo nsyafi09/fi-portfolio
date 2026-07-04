@@ -12,7 +12,7 @@
     />
 
     <script defer src="js/nav.js"></script>
-    <script defer src="js/story-engine.js"></script>
+    <script defer src="js/story.js"></script>
 
     <title>Story — Someday Under the Blue Sky</title>
     <!-- Style -->
@@ -72,10 +72,7 @@
 
     <section class="story-section" lang="ja-jp">
       <div class="story-meta">
-        <ul>
-          <li>Sci-fi</li>
-          <li>Thriller</li>
-        </ul>
+        <ul id="story-genres"></ul>
       </div>
 
       <div class="story-container">
@@ -103,7 +100,7 @@
           <h1 id="title"></h1>
         </div>
         <div class="story-content">
-          <p id="story"></p>
+          <div id="story"></div>
         </div>
 
         <div class="story-route" id="routes">

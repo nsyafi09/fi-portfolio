@@ -1,9 +1,10 @@
 {
   "slug": "voyager-x",
   "title": "ボイジャーX",
-  "series": null,
+  "series": "Horror Series",
   "language": "ja",
   "draft": false,
+  "genres": ["Sci-fi", "Horror"],
   "nodes": [
     {
       "id": 1,

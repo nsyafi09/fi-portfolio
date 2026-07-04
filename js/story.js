@@ -2,6 +2,7 @@
   const storyEl  = document.getElementById('story');
   const routesEl = document.getElementById('routes');
   const titleEl  = document.getElementById('title');
+  const genresEl = document.getElementById('story-genres');
 
   if (!storyEl && !titleEl) return;
 
@@ -41,7 +42,14 @@
       if (!r.ok) throw new Error('Story not found: ' + slug);
       return r.json();
     })
-    .then(function (data) { startGame(data.nodes); })
+    .then(function (data) {
+      startGame(data.nodes);
+      if (genresEl && data.genres) {
+        genresEl.innerHTML = data.genres
+          .map(function (g) { return '<li>' + g + '</li>'; })
+          .join('');
+      }
+    })
     .catch(function () {
       if (titleEl) titleEl.textContent = 'Story not found';
       if (storyEl) storyEl.textContent = '';

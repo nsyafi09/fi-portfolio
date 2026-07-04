@@ -43,40 +43,8 @@
     margin-left: 3vw;
 }
 
-.story-list-left {
+.story-list-card-img {
     display: block;
-    background-image: url(/images/horror-jp.jpg);
-    background-size: cover;
-    background-position: center;
-
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-
-    width: 460px;
-    height: 350px;
-
-    border: 1px solid var(--soft-grey);
-    border-right: none;
-}
-
-.story-list-left2 {
-    display: block;
-    background-image: url(/images/horror-jp.jpg);
-    background-size: cover;
-    background-position: center;
-
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-
-    width: 460px;
-    height: 350px;
-
-    border: 1px solid var(--soft-grey);
-    border-right: none;
-}
-
-.story-list-placeholder {
-    background-image: url(/images/sea-walk.jpg);
     background-size: cover;
     background-position: center;
 
@@ -221,27 +189,7 @@
         margin: 10px;
     }
     
-    .story-list-left {    
-        margin: 10px;
-        border: none;
-
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);;
-    
-        width: 90vw;
-        height: 40vh;
-    }
-
-    .story-list-left2 {
-        margin: 10px;
-        border: none;
-
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-
-        width: 90vw;
-        height: 40vh;
-    }
-
-    .story-list-placeholder {
+    .story-list-card-img {
         margin: 10px;
         border: none;
 
@@ -326,20 +274,7 @@
         font-size: 3.5rem;
     }
     
-    .story-list-left {
-        min-width: 760px;
-        min-height: 550px;
-    }
-    
-    .story-list-left2 {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-
-        min-width: 760px;
-        min-height: 550px;
-    }
-
-    .story-list-placeholder {
+    .story-list-card-img {
         margin-top: 5vh;
         margin-bottom: 5vh;
 
