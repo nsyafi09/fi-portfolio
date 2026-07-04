@@ -66,6 +66,7 @@
 .story-content p {
     font-size: 1.1rem;
     line-height: 2.7rem;
+    margin-bottom: 1.8rem;
 
     word-wrap: break-word;
 
@@ -158,6 +159,7 @@
     .story-content p {
         font-size: 1.1rem;
         line-height: 2rem;
+        margin-bottom: 1.2rem;
     }
 
     .story-route {
@@ -233,9 +235,10 @@ footer {
     .story-content p {
         font-size: 1.7rem;
         line-height: 3.5rem;
-    
+        margin-bottom: 2.5rem;
+
         word-wrap: break-word;
-    
+
         transition: all ease-in 0.4s;
     }
     

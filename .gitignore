@@ -1,2 +1,8 @@
+.DS_Store
+.vscode
+
 /docs-ref
 /old-archived
+
+# TBD, script generator
+/scripts 

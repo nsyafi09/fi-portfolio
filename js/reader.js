@@ -15,7 +15,7 @@
     return { meta: meta, body: match[2] };
   }
 
-  fetch('posts/' + slug + '.md')
+  fetch('posts/personal/stories/' + slug + '.md')
     .then(function (r) { if (!r.ok) throw new Error(); return r.text(); })
     .then(function (raw) {
       var parsed = parseFrontmatter(raw);

@@ -20,7 +20,7 @@
       + '</div>';
   }
 
-  fetch('data/index.json')
+  fetch('data/personal-stories/index.json')
     .then(function (r) { if (!r.ok) throw new Error('index not found'); return r.json(); })
     .then(function (stories) {
       mount.innerHTML = stories.map(buildCard).join('');
