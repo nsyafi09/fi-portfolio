@@ -4,7 +4,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/images/about_back.jpeg);
+    background-image: url(/data/images/about_back.jpeg);
 
     display: flex;
     align-items: center;
