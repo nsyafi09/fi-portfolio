@@ -1,14 +1,5 @@
 #!/usr/bin/env node
-// Verifies the content pipeline that scripts/gen-index.js drives.
-//   1. Regenerates data/personal-stories/index.json and fails if it's stale
-//      relative to what's committed (someone edited content but forgot to
-//      re-run the gen script).
-//   2. Validates every posts/personal/stories/*.md and
-//      data/personal-stories/*.json file against the assumptions the
-//      front-end (js/story.js, js/reader.js, js/storylist.js) makes at
-//      runtime — assumptions gen-index.js itself does not check.
-//
-// Usage: node scripts/verify-content.js
+// Verifies the content pipeline from scripts/gen-index.js
 
 const fs            = require('fs');
 const path          = require('path');
@@ -34,8 +25,6 @@ function parseFrontmatter(raw) {
   return meta;
 }
 
-// --- Step 1: regenerate the index and check it isn't stale ---
-
 console.log('Regenerating data/personal-stories/index.json...');
 execSync('node scripts/gen-index.js', { cwd: ROOT, stdio: 'inherit' });
 
@@ -52,9 +41,8 @@ try {
   );
 }
 
-// --- Step 2: validate markdown (linear) stories ---
-
-const seenSlugs = new Map(); // slug -> file that first claimed it
+// Validate Markdown
+const seenSlugs = new Map();
 
 if (fs.existsSync(STORIES_DIR)) {
   fs.readdirSync(STORIES_DIR)
@@ -84,8 +72,7 @@ if (fs.existsSync(STORIES_DIR)) {
     });
 }
 
-// --- Step 3: validate JSON (branching) stories ---
-
+// Validate branching (TO-BE Removed later)
 if (fs.existsSync(DATA_DIR)) {
   fs.readdirSync(DATA_DIR)
     .filter(f => f.endsWith('.json') && f !== 'index.json')
@@ -124,9 +111,6 @@ if (fs.existsSync(DATA_DIR)) {
         fail(rel, 'no node with id 1 — story.js always starts at node id 1, this story cannot load');
       }
 
-      // story.js treats route.nextText <= 0 as a "restart the story" sentinel
-      // (see showStoryNode: `if (route.nextText <= 0) return startGame(nodes)`),
-      // so only positive ids need to resolve to a real node.
       story.nodes.forEach(node => {
         (node.routes || []).forEach(route => {
           if (route.nextText != null && route.nextText > 0 && !ids.includes(route.nextText)) {
@@ -136,8 +120,6 @@ if (fs.existsSync(DATA_DIR)) {
       });
     });
 }
-
-// --- Report ---
 
 if (errors.length > 0) {
   console.error(`\n${errors.length} content problem${errors.length === 1 ? '' : 's'} found:\n`);

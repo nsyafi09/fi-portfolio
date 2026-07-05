@@ -1,11 +1,5 @@
 #!/usr/bin/env node
-// Regenerates data/personal-stories/index.json from:
-//   - posts/personal/stories/*.md  (linear stories, type: "linear")
-//   - data/personal-stories/*.json (branching stories, type: "branching") — skips draft: true and index.json itself
-//
 // Future: portfolio posts (posts/portfolio/**) will need a separate catalog for the portfolio side.
-//
-// Usage: node scripts/gen-index.js
 
 const fs   = require('fs');
 const path = require('path');
@@ -33,7 +27,7 @@ function stripHtml(str) {
 
 const entries = [];
 
-// --- Linear stories from posts/personal/stories/*.md ---
+// from posts/personal/stories/*.md 
 if (fs.existsSync(STORIES_DIR)) {
   fs.readdirSync(STORIES_DIR)
     .filter(f => f.endsWith('.md'))
@@ -61,7 +55,7 @@ if (fs.existsSync(STORIES_DIR)) {
     });
 }
 
-// --- Branching stories from data/personal-stories/*.json ---
+// To handle branching stories (TO-BE Removed later)
 if (fs.existsSync(DATA_DIR)) {
   fs.readdirSync(DATA_DIR)
     .filter(f => f.endsWith('.json') && f !== 'index.json')
