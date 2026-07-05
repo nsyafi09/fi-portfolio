@@ -9,11 +9,13 @@
 document.querySelectorAll('.pf-card-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.pf-card');
+    if (!card) return;
     const expanded = card.querySelector('.pf-card-expanded');
-    const isOpen = !expanded.hidden;
+    if (!expanded) return;
 
+    const isOpen = !expanded.hidden;
     expanded.hidden = isOpen;
-    btn.textContent = isOpen ? '+' : '−';
+    btn.textContent = isOpen ? '▸' : '▾';
     btn.setAttribute('aria-expanded', String(!isOpen));
   });
 });
