@@ -2,7 +2,4 @@
 .vscode
 
 /docs-ref
-/old-archived
-
-# TBD, script generator
-/scripts 
+/old-archived 

@@ -75,16 +75,11 @@
 
 .story-route {
     border-top: 1px solid var(--soft-grey);
-    margin-top: 68px;
-
     padding-right: 60px;
     padding-left: 60px;
-
     padding-top: 48px;
     padding-bottom: 48px;
-
     text-align: center;
-        
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
@@ -244,16 +239,11 @@ footer {
     
     .story-route {
         border-top: 1px solid var(--soft-grey);
-        margin-top: 68px;
-    
         padding-right: 60px;
         padding-left: 60px;
-    
         padding-top: 48px;
         padding-bottom: 48px;
-    
         text-align: center;
-            
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 10px;

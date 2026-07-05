@@ -10,7 +10,7 @@ html {
 
 body {
     background-color: var(--soft-white);
-    color: var(--platinum);
+    color: var(--rich-black);
     font-family: var(--font-playfair);
 }
 
@@ -205,7 +205,8 @@ h1, h2, h3, p {
 
 .passage-right {
     background-color: var(--rich-black);
-    
+    color: var(--platinum);
+
     width: 43vw;
     height: 90vh;
 
@@ -230,7 +231,7 @@ h1, h2, h3, p {
     margin-bottom: 5vh;
 }
 
-.passage-content h1 {
+.passage-content h2 {
     font-size: 2.6rem;
     font-weight: 300;
     margin-bottom: 3vh;
@@ -278,7 +279,7 @@ h1, h2, h3, p {
         margin-right: 10vw;
     }
     
-    .passage-content h1 {
+    .passage-content h2 {
         font-size: 1.6rem;
         font-weight: 300;
     }
@@ -302,6 +303,7 @@ h1, h2, h3, p {
     background-attachment: fixed;
     background-size: cover;
     background-color: var(--rich-black);
+    color: var(--platinum);
 
     display: flex;
     align-items: center;
@@ -343,10 +345,9 @@ h1, h2, h3, p {
     margin-top: 5vh;
 }
 
-.future-content h1 {
+.future-content h2 {
     font-size: 2.6rem;
     font-weight: 300;
-
     color: var(--rich-black);
 }
 
@@ -356,6 +357,7 @@ h1, h2, h3, p {
 
 .future-content p {
     font-family: var(--font-roboto);
+    margin-top: 0.75rem;
 }
 
 .future-right {
@@ -378,10 +380,11 @@ h1, h2, h3, p {
     box-shadow: 20px 25px var(--rich-black);
 }
 
-.future-section h1, .future-section p, .future-section span {
+.future-section h2, .future-section p, .future-section span {
     color: var(--rich-black);
     line-height: 1.85rem;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
+    margin-bottom: 1.5rem;
 }
 
 /* Future Mobile */
@@ -406,7 +409,7 @@ h1, h2, h3, p {
         margin-right: 3vw;
     }
     
-    .future-content h1 {
+    .future-content h2 {
         font-size: 1.6rem;
     }
     
@@ -434,7 +437,7 @@ h1, h2, h3, p {
         box-shadow: 10px 12px var(--rich-black);
     }
     
-    .future-section h1, .future-section p, span {
+    .future-section h2, .future-section p, .future-section span {
         color: var(--rich-black);
         line-height: 1.5rem;
     }
@@ -461,6 +464,7 @@ footer {
 
 footer p {
     font-size: 1.5rem;
+    color: var(--platinum);
 }
 
 

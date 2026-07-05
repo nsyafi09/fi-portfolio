@@ -35,7 +35,7 @@
   }
 
   const params = new URLSearchParams(window.location.search);
-  const slug = params.get('story') || 'had-i-had-envelope';
+  const slug = params.get('story') || 'voyager-x';
 
   fetch('data/personal-stories/' + slug + '.json')
     .then(function (r) {
@@ -43,6 +43,7 @@
       return r.json();
     })
     .then(function (data) {
+      document.title = data.title + ' — Someday Under the Blue Sky';
       startGame(data.nodes);
       if (genresEl && data.genres) {
         genresEl.innerHTML = data.genres
@@ -50,7 +51,8 @@
           .join('');
       }
     })
-    .catch(function () {
+    .catch(function (err) {
+      console.error(err);
       if (titleEl) titleEl.textContent = 'Story not found';
       if (storyEl) storyEl.textContent = '';
     });

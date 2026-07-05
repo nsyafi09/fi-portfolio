@@ -39,7 +39,8 @@
         pageTitleEl.textContent = meta.title + ' — Someday Under the Blue Sky';
       }
     })
-    .catch(function () {
+    .catch(function (err) {
+      console.error(err);
       var titleEl = document.getElementById('title');
       if (titleEl) titleEl.textContent = 'Story not found';
     });
