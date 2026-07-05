@@ -1,0 +1,22 @@
+name: Content Check
+
+on:
+  pull_request:
+    paths:
+      - 'posts/**'
+      - 'data/**'
+      - 'scripts/gen-index.js'
+      - 'scripts/verify-content.js'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify content loader
+        run: node scripts/verify-content.js
