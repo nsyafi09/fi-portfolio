@@ -5,7 +5,7 @@
   "language": "ja",
   "draft": false,
   "preview": "人類初の宇宙探査機「ボイジャーX」。星々のそばを泳ぐという夢を実現するための宇宙への航海の始まりは、宇宙に浮かぶ死体のように無残な姿となり、壊れてしまった。",
-  "image": "/images/horror-jp.jpg",
+  "image": "data/images/horror-jp.jpg",
   "genres": ["Sci-fi", "Horror"],
   "nodes": [
     {

@@ -10,7 +10,7 @@
       "Nostalgic",
       "Heartwarming"
     ],
-    "image": "/images/horror-jp.jpg",
+    "image": "data/images/had-i-had-envelope.jpg",
     "contentPath": "posts/personal/stories/had-i-had-envelope.md"
   },
   {
@@ -24,7 +24,7 @@
       "Sci-fi",
       "Horror"
     ],
-    "image": "/images/horror-jp.jpg",
+    "image": "data/images/horror-jp.jpg",
     "contentPath": "data/personal-stories/voyager-x.json"
   }
 ]
