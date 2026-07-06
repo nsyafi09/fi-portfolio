@@ -89,7 +89,7 @@ h1, h2, h3, p {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/data/images/sea-back.jpg);
+    background-image: url(../data/images/sea-back.jpg);
 }
 
 .hero-container {
@@ -192,7 +192,7 @@ h1, h2, h3, p {
 }
 
 .passage-left {
-    background-image: url(/data/images/passage.png);
+    background-image: url(../data/images/passage.png);
     background-size: cover;
     background-position: center;
 
@@ -253,7 +253,7 @@ h1, h2, h3, p {
     }
     
     .passage-left {
-        background-image: url(/data/images/passage.png);
+        background-image: url(../data/images/passage.png);
         background-size: cover;
     
         width: 90%;
