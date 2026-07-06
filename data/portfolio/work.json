@@ -1,0 +1,61 @@
+[
+  {
+    "company": "TEKsystems (Contract)",
+    "location": "Yokohama, Japan",
+    "positions": [
+      {
+        "title": "Quality Engineer",
+        "department": "Onsite, Evaluation Engineering",
+        "period": "Jul 2025 — Present",
+        "skills": ["Swift", "XCUITest", "AI-Assisted QA", "Internal Tooling"],
+        "highlights": [
+          "Debug, maintain, and improve Swift-based automated tests to reduce manual effort and improve test stability",
+          "Investigate test failures through log analysis, issue reproduction, and root cause analysis",
+          "Maintain and improve internal tools that automate tester workflows and improve team productivity"
+        ],
+        "details": [
+          "Support manual and automated testing for an AI user assistant system, including maintenance of related test tools and workflows",
+          "Utilize AI-assisted tools to streamline deliveries and support evaluation of outputs"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Rakuten Group, Inc (Permanent)",
+    "location": "Tokyo, Japan",
+    "positions": [
+      {
+        "title": "QA Automation Engineer",
+        "department": "Leisure Product QA Department",
+        "period": "Oct 2024 — Jun 2025",
+        "skills": ["Python", "Robot Framework", "Selenium", "Appium"],
+        "highlights": [
+          "Led automation QA efforts for a real-time bicycle racing betting platform, coordinating task allocation and delivery timelines",
+          "Designed, developed, and maintained automated test suites using Python, Robot Framework, Selenium, and Appium",
+          "Improved CI/CD efficiency by introducing parallel test execution and optimizing pipeline jobs"
+        ],
+        "details": [
+          "Contributed to migration of the test automation framework from Ranorex to a more reusable and scalable solution, improving migration efficiency",
+          "Created and refined test scenarios to improve automation coverage and strengthen key validations for production risk reduction",
+          "Supported maintenance of in-house dashboards and collaborated with the SRE team on dashboard migration-related investigation"
+        ]
+      },
+      {
+        "title": "Associate Software QA Engineer",
+        "department": "Travel Product QA Department",
+        "period": "Apr 2023 — Oct 2024",
+        "skills": ["Manual QA", "Bilingual (EN/JP)", "Regression Testing", "ISTQB Training"],
+        "highlights": [
+          "Worked as a bilingual (English/Japanese) test engineer for an OTA website — test design, planning, and execution",
+          "Performed backend and frontend testing for system upgrades, regression coverage, and UI feature validation",
+          "Delivered ISTQB Foundation training for new QA members to support onboarding"
+        ],
+        "details": [
+          "Coordinated with developers, product managers, and QA members to support project delivery and test execution planning",
+          "Contributed to internal workflow improvements in test design templates, issue analysis, and reporting practice",
+          "Helped improve collaboration between manual and automation QA workflows as part of internal quality improvement efforts"
+        ]
+      }
+    ]
+  }
+]

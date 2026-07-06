@@ -332,12 +332,109 @@ ul {
     white-space: nowrap;
 }
 
-.pf-work-role {
+.pf-work-company-location {
+    font-family: var(--font-roboto);
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--bdazzled-blue);
+    white-space: nowrap;
+}
+
+.pf-work-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    list-style: none;
+    margin-top: 0.4rem;
+}
+
+.pf-work-role-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--soft-grey);
+}
+
+.pf-work-role-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.pf-work-role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.pf-work-role-title {
     font-family: var(--font-roboto);
     font-size: 0.8rem;
     font-weight: 300;
     color: var(--bdazzled-blue);
 }
+
+.pf-work-tags {
+    font-family: var(--font-roboto);
+    font-size: 0.7rem;
+    color: var(--bdazzled-blue);
+    line-height: 1.5;
+    margin-top: 0.4rem;
+}
+
+.pf-work-tags::before {
+    content: "Skills: ";
+}
+
+.pf-work-tags span {
+    font-size: 0.7rem;
+    color: var(--bdazzled-blue);
+}
+
+.pf-work-tags span:not(:last-child)::after {
+    content: ", ";
+}
+
+.pf-work-highlights,
+.pf-work-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+.pf-work-highlights li,
+.pf-work-details li {
+    font-family: var(--font-roboto);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--rich-black);
+    line-height: 1.6;
+}
+
+.pf-work-more-toggle {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: var(--bdazzled-blue);
+    font-family: var(--font-roboto);
+    font-size: 0.72rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0.3rem 0;
+    margin-top: 0.2rem;
+}
+
+.pf-work-more-toggle:hover,
+.pf-work-more-toggle:focus-visible {
+    color: var(--rich-black);
+    outline: none;
+}
+
+.pf-work-details[hidden] { display: none; }
 
 .pf-card-writeup p {
     font-family: var(--font-roboto);
