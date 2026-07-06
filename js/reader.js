@@ -1,6 +1,7 @@
 (function () {
   var params = new URLSearchParams(window.location.search);
   var slug = params.get('post');
+  var catalogKey = params.get('catalog') || 'stories';
   if (!slug) return;
 
   function parseFrontmatter(raw) {
@@ -15,7 +16,8 @@
     return { meta: meta, body: match[2] };
   }
 
-  fetch('posts/personal/stories/' + slug + '.md')
+  getCatalogEntry(catalogKey, slug)
+    .then(function (entry) { return fetch(entry.contentPath); })
     .then(function (r) { if (!r.ok) throw new Error(); return r.text(); })
     .then(function (raw) {
       var parsed = parseFrontmatter(raw);

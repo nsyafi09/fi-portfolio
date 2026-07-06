@@ -37,7 +37,8 @@
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('story') || 'voyager-x';
 
-  fetch('data/personal-stories/' + slug + '.json')
+  getCatalogEntry('stories', slug)
+    .then(function (entry) { return fetch(entry.contentPath); })
     .then(function (r) {
       if (!r.ok) throw new Error('Story not found: ' + slug);
       return r.json();

@@ -1,11 +1,3 @@
-/*
- * Future migration note:
- * Card content (title, summary, writeup, links) could be extracted into
- * a cards.json file and loaded via fetch(), replacing the HTML content
- * with rendered templates. The data-card-id attribute on each .pf-card
- * is the key for that future lookup.
- */
-
 document.querySelectorAll('.pf-card-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.pf-card');
@@ -81,5 +73,32 @@ if (workMount) {
     .catch(err => {
       console.error(err);
       workMount.innerHTML = '<p>Could not load work history.</p>';
+    });
+}
+
+function renderProjectLink(project) {
+  const label = `${project.title} →`;
+  if (project.linkType === 'internal') {
+    return `<li><a href="reader.html?post=${project.slug}&catalog=portfolio">${label}</a></li>`;
+  }
+  if (project.linkType === 'external' && project.linkUrl) {
+    return `<li><a href="${project.linkUrl}" target="_blank" rel="noopener">${label}</a></li>`;
+  }
+  return `<li><span>${label}</span></li>`;
+}
+
+const projectsMount = document.getElementById('projects-list-mount');
+if (projectsMount) {
+  fetch('data/portfolio/index.json')
+    .then(r => {
+      if (!r.ok) throw new Error('projects data not found');
+      return r.json();
+    })
+    .then(projects => {
+      projectsMount.innerHTML = `<ul class="pf-card-links">${projects.map(renderProjectLink).join('')}</ul>`;
+    })
+    .catch(err => {
+      console.error(err);
+      projectsMount.innerHTML = '<p>Could not load projects.</p>';
     });
 }
