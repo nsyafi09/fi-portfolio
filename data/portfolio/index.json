@@ -13,8 +13,8 @@
     "contentPath": "posts/portfolio/projects/automation-framework.md"
   },
   {
-    "slug": "fi-portfolio",
-    "title": "fi-portfolio — Personal Site & Story Platform",
+    "slug": "personal-site",
+    "title": "Personal Writing Site - Shallow Light Sea",
     "preview": "A two-sided personal site combining a QA portfolio and an interactive story platform, built with a hand-rolled markdown content pipeline and GitHub Actions CI.",
     "tags": [
       "JavaScript",
@@ -24,6 +24,6 @@
     ],
     "linkType": "internal",
     "linkUrl": null,
-    "contentPath": "posts/portfolio/projects/fi-portfolio.md"
+    "contentPath": "posts/portfolio/projects/personal-site.md"
   }
 ]

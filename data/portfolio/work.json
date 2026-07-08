@@ -11,7 +11,7 @@
         "highlights": [
           "Debug, maintain, and improve Swift-based automated tests to reduce manual effort and improve test stability",
           "Investigate test failures through log analysis, issue reproduction, and root cause analysis",
-          "Maintain and improve internal tools that automate tester workflows and improve team productivity"
+          "Maintain and extend a Python/Streamlit-based internal tool with new features, automating tester workflows and cutting process time by more than 2x"
         ],
         "details": [
           "Support manual and automated testing for an AI user assistant system, including maintenance of related test tools and workflows",
@@ -37,7 +37,8 @@
         "details": [
           "Contributed to migration of the test automation framework from Ranorex to a more reusable and scalable solution, improving migration efficiency",
           "Created and refined test scenarios to improve automation coverage and strengthen key validations for production risk reduction",
-          "Supported maintenance of in-house dashboards and collaborated with the SRE team on dashboard migration-related investigation"
+          "Supported maintenance of in-house dashboards and collaborated with the SRE team on dashboard migration-related investigation",
+          "Built a Jenkins pipeline data generator used by testers to create 1000+ user records a month, cutting manual test-account setup effort"
         ]
       },
       {

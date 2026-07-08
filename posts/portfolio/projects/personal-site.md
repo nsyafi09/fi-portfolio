@@ -1,8 +1,9 @@
 ---
-title: fi-portfolio — Personal Site & Story Platform
+title: Personal Writing Site - Shallow Light Sea
 description: A two-sided personal site combining a QA portfolio and an interactive story platform, built with a hand-rolled markdown content pipeline and GitHub Actions CI.
 tags: JavaScript, GitHub Actions, Static Site, Content Pipeline
 linkType: internal
+language: en
 date: 2026-07-06
 ---
 
