@@ -10,6 +10,9 @@ const STORIES_DIR  = path.join(ROOT, 'posts', 'personal', 'stories');
 const DATA_DIR     = path.join(ROOT, 'data', 'personal-stories');
 const INDEX_FILE   = path.join(DATA_DIR, 'index.json');
 
+const PORTFOLIO_PROJECTS_DIR = path.join(ROOT, 'posts', 'portfolio', 'projects');
+const PORTFOLIO_INDEX_FILE   = path.join(ROOT, 'data', 'portfolio', 'index.json');
+
 const errors = [];
 const fail = (file, msg) => errors.push(`${file}: ${msg}`);
 
@@ -37,6 +40,19 @@ try {
 } catch {
   fail(
     'data/personal-stories/index.json',
+    'is out of date — run `node scripts/gen-index.js` and commit the result'
+  );
+}
+
+try {
+  execSync(`git diff --exit-code -- ${JSON.stringify(path.relative(ROOT, PORTFOLIO_INDEX_FILE))}`, {
+    cwd: ROOT,
+    stdio: 'pipe',
+  });
+  console.log('data/portfolio/index.json is up to date.');
+} catch {
+  fail(
+    'data/portfolio/index.json',
     'is out of date — run `node scripts/gen-index.js` and commit the result'
   );
 }
@@ -118,6 +134,46 @@ if (fs.existsSync(DATA_DIR)) {
           }
         });
       });
+    });
+}
+
+// Validate portfolio project write-ups (independent slug space from personal-stories,
+// since readers look these up via an explicit ?catalog=portfolio param, not by guessing)
+const seenPortfolioSlugs = new Map();
+
+if (fs.existsSync(PORTFOLIO_PROJECTS_DIR)) {
+  fs.readdirSync(PORTFOLIO_PROJECTS_DIR)
+    .filter(f => f.endsWith('.md'))
+    .forEach(file => {
+      const rel = path.join('posts', 'portfolio', 'projects', file);
+      const raw = fs.readFileSync(path.join(PORTFOLIO_PROJECTS_DIR, file), 'utf8');
+      const meta = parseFrontmatter(raw);
+
+      if (!meta) {
+        fail(rel, 'frontmatter did not parse (missing or malformed --- fences)');
+        return;
+      }
+
+      if (meta.draft === 'true') return; // intentionally excluded, nothing to validate
+
+      ['title', 'description'].forEach(field => {
+        if (!meta[field]) fail(rel, `missing required frontmatter field "${field}"`);
+      });
+
+      const linkType = meta.linkType || 'internal';
+      if (!['internal', 'external', 'none'].includes(linkType)) {
+        fail(rel, `invalid linkType "${linkType}" — must be "internal", "external", or "none"`);
+      }
+      if (linkType === 'external' && !meta.linkUrl) {
+        fail(rel, 'linkType is "external" but no linkUrl is set');
+      }
+
+      const slug = file.replace(/\.md$/, '');
+      if (seenPortfolioSlugs.has(slug)) {
+        fail(rel, `duplicate slug "${slug}" (also used by ${seenPortfolioSlugs.get(slug)})`);
+      } else {
+        seenPortfolioSlugs.set(slug, rel);
+      }
     });
 }
 

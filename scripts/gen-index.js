@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// Future: portfolio posts (posts/portfolio/**) will need a separate catalog for the portfolio side.
 
 const fs   = require('fs');
 const path = require('path');
@@ -8,6 +7,10 @@ const ROOT        = path.resolve(__dirname, '..');
 const STORIES_DIR = path.join(ROOT, 'posts', 'personal', 'stories');
 const DATA_DIR    = path.join(ROOT, 'data', 'personal-stories');
 const INDEX_FILE  = path.join(DATA_DIR, 'index.json');
+
+const PORTFOLIO_PROJECTS_DIR = path.join(ROOT, 'posts', 'portfolio', 'projects');
+const PORTFOLIO_DATA_DIR     = path.join(ROOT, 'data', 'portfolio');
+const PORTFOLIO_INDEX_FILE   = path.join(PORTFOLIO_DATA_DIR, 'index.json');
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\n([\s\S]*?)\n---/);
@@ -86,3 +89,36 @@ if (fs.existsSync(DATA_DIR)) {
 fs.writeFileSync(INDEX_FILE, JSON.stringify(entries, null, 2) + '\n');
 console.log(`Wrote ${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} to data/personal-stories/index.json`);
 entries.forEach(e => console.log(`  [${e.type}] ${e.slug}  →  ${e.contentPath}`));
+
+// --- Portfolio projects from posts/portfolio/projects/*.md ---
+const portfolioEntries = [];
+
+if (fs.existsSync(PORTFOLIO_PROJECTS_DIR)) {
+  fs.readdirSync(PORTFOLIO_PROJECTS_DIR)
+    .filter(f => f.endsWith('.md'))
+    .forEach(file => {
+      const raw  = fs.readFileSync(path.join(PORTFOLIO_PROJECTS_DIR, file), 'utf8');
+      const meta = parseFrontmatter(raw);
+      if (!meta || meta.draft === 'true') return;
+
+      const slug = file.replace(/\.md$/, '');
+      const tags = meta.tags
+        ? meta.tags.split(',').map(t => t.trim())
+        : [];
+
+      portfolioEntries.push({
+        slug,
+        title:       meta.title       || slug,
+        preview:     meta.description || '',
+        tags,
+        linkType:    meta.linkType    || 'internal',
+        linkUrl:     meta.linkUrl     || null,
+        contentPath: 'posts/portfolio/projects/' + file,
+      });
+    });
+}
+
+if (!fs.existsSync(PORTFOLIO_DATA_DIR)) fs.mkdirSync(PORTFOLIO_DATA_DIR, { recursive: true });
+fs.writeFileSync(PORTFOLIO_INDEX_FILE, JSON.stringify(portfolioEntries, null, 2) + '\n');
+console.log(`Wrote ${portfolioEntries.length} entr${portfolioEntries.length === 1 ? 'y' : 'ies'} to data/portfolio/index.json`);
+portfolioEntries.forEach(e => console.log(`  [project] ${e.slug}  →  ${e.contentPath}`));

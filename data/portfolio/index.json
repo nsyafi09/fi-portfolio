@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "automation-framework",
+    "title": "Automation Framework",
+    "preview": "A test automation framework project — write-up coming soon.",
+    "tags": [
+      "Python",
+      "Robot Framework",
+      "Test Automation"
+    ],
+    "linkType": "external",
+    "linkUrl": "https://github.com/nsyafi09/autonomous-qa",
+    "contentPath": "posts/portfolio/projects/automation-framework.md"
+  },
+  {
+    "slug": "personal-site",
+    "title": "Personal Writing Site - Shallow Light Sea",
+    "preview": "A two-sided personal site combining a QA portfolio and an interactive story platform, built with a hand-rolled markdown content pipeline and GitHub Actions CI.",
+    "tags": [
+      "JavaScript",
+      "GitHub Actions",
+      "Static Site",
+      "Content Pipeline"
+    ],
+    "linkType": "internal",
+    "linkUrl": null,
+    "contentPath": "posts/portfolio/projects/personal-site.md"
+  }
+]

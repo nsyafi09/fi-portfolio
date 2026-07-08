@@ -1,0 +1,61 @@
+[
+  {
+    "company": "TEKsystems (Contract)",
+    "location": "Yokohama, Japan",
+    "positions": [
+      {
+        "title": "Quality Engineer",
+        "department": "Onsite, Evaluation Engineering",
+        "period": "Jul 2025 — Present",
+        "skills": ["Swift", "XCUITest", "Streamlit", "CI/CD Pipelines", "Internal Tooling", "AI-Assisted QA"],
+        "highlights": [
+          "Main PiC for regression testing of an iOS-based AI User Assistant system, investigating test failures through root cause analysis",
+          "Debug, maintain, and enhance automated test scripts, frameworks, and internal CI/CD pipelines integrated with GitHub Actions",
+          "Maintain and extend a Python/Streamlit-based internal tool with new features, automating tester workflows and cutting process time by more than 2x"
+        ],
+        "details": [
+          "Communicate test reports to client and operations manager for fast-paced deliverables",
+          "Serve as team test script reviewer to maintain code quality and flexibility",
+          "Work with and develop AI-assisted tools to streamline output evaluation and reviews"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Rakuten Group, Inc (Permanent)",
+    "location": "Tokyo, Japan",
+    "positions": [
+      {
+        "title": "QA Automation Engineer",
+        "department": "Leisure Product QA Department",
+        "period": "Oct 2024 — Jun 2025",
+        "skills": ["Python", "Robot Framework", "Selenium", "Appium", "Jenkins"],
+        "highlights": [
+          "Led QA automation strategy and vendor team coordination for a real-time Japanese bicycle racing betting platform, serving as the final automated check before release approval",
+          "Reduced release check time from 2-3 days to under 24 hours by introducing parallel testing across mobile (iOS and Android) and browser test suites",
+          "Migrated and scripted automated tests from Ranorex onto Python, Robot Framework, Selenium, and Appium, covering front-end, backend admin panel, and mobile app testing"
+        ],
+        "details": [
+          "Built a Jenkins pipeline data generator used by testers to create 1000+ user records a month, and a tool to generate Jenkins pipeline scripts from JSON test configuration, streamlining test population",
+          "Collaborated with Manual QA to refine test scenarios and strengthen validation against production risk"
+        ]
+      },
+      {
+        "title": "Associate Software QA Engineer",
+        "department": "Travel Product QA Department",
+        "period": "Apr 2023 — Oct 2024",
+        "skills": ["Bilingual QA (EN/JP)", "Regression Testing", "Test Design & Planning", "ISTQB Trainer"],
+        "highlights": [
+          "Bilingual (English/Japanese) QA for an OTA website — performed test design, planning, and execution",
+          "Tested on backend and frontend for LCM upgrades, regression coverage, and UI feature validation, using SQL queries to verify backend data and ensure successful release",
+          "Delivered ISTQB Foundation training for new QA members, supporting onboarding and skills development with 2 members passing after 6 months"
+        ],
+        "details": [
+          "Worked closely with developers, product managers, and other QA members to provide concrete testing strategy and efficient coverage, joining release operations and post-release monitoring as needed to avoid production issues",
+          "Contributed to improving internal test design templates, issue analysis, and reporting practices",
+          "Served as team's PiC for cross-team QA collaboration to streamline Manual-Automation workflows"
+        ]
+      }
+    ]
+  }
+]

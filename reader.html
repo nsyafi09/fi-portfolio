@@ -14,6 +14,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
     <script defer src="js/nav.js"></script>
+    <script defer src="js/catalog.js"></script>
     <script defer src="js/reader.js"></script>
 
     <title id="page-title">Story — Someday Under the Blue Sky</title>
@@ -26,7 +27,7 @@
   <body>
     <header class="header-container" id="nav-root"></header>
 
-    <section class="story-section" lang="ja-JP">
+    <section class="story-section">
       <div class="story-meta">
         <ul id="story-genres"></ul>
       </div>
@@ -59,7 +60,7 @@
           <div id="story-body"></div>
         </div>
         <div class="story-route">
-          <a href="storylist.html">← Back to Stories</a>
+          <a id="back-link" href="storylist.html">← Back to Stories</a>
         </div>
       </div>
     </section>
