@@ -78,6 +78,10 @@ ul {
 .pf-split-left {
     width: clamp(200px, 20vw, 280px);
     background-color: var(--oxford-blue);
+    flex-shrink: 0;
+}
+
+.pf-split-left-inner {
     position: sticky;
     top: 0;
     height: 90vh;
@@ -85,7 +89,6 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    flex-shrink: 0;
     overflow-y: auto;
     padding: 2.5rem 1.5rem;
     gap: 1.5rem;
@@ -632,6 +635,9 @@ footer p {
 
     .pf-split-left {
         width: 100%;
+    }
+
+    .pf-split-left-inner {
         height: auto;
         position: relative;
         justify-content: flex-start;
