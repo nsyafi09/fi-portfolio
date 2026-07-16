@@ -1,5 +1,6 @@
 ---
 title: Sunflower
+series: Amber Memoirs Series
 language: en
 genres: Nostalgic, Bittersweet
 image: sunflower.jpg
