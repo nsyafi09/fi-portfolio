@@ -10,7 +10,8 @@
     ],
     "linkType": "external",
     "linkUrl": "https://github.com/nsyafi09/autonomous-qa",
-    "contentPath": "posts/portfolio/projects/automation-framework.md"
+    "image": "",
+    "contentPath": "posts/portfolio/projects/automation-framework/automation-framework.md"
   },
   {
     "slug": "personal-site",
@@ -24,6 +25,7 @@
     ],
     "linkType": "internal",
     "linkUrl": null,
-    "contentPath": "posts/portfolio/projects/personal-site.md"
+    "image": "",
+    "contentPath": "posts/portfolio/projects/personal-site/personal-site.md"
   }
 ]

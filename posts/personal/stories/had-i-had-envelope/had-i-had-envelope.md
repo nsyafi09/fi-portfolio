@@ -3,7 +3,7 @@ title: Had I Have One More Envelope to Write
 series: Amber Memoirs Series
 language: en
 genres: Nostalgic, Heartwarming
-image: data/images/had-i-had-envelope.jpg
+image: had-i-had-envelope.jpg
 description: A nostalgic scent came to mind, an old tale which began to uncover itself to the surface of heart.
 date: 2026-07-04
 ---

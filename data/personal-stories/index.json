@@ -10,8 +10,22 @@
       "Nostalgic",
       "Heartwarming"
     ],
-    "image": "data/images/had-i-had-envelope.jpg",
-    "contentPath": "posts/personal/stories/had-i-had-envelope.md"
+    "image": "posts/personal/stories/had-i-had-envelope/images/had-i-had-envelope.jpg",
+    "contentPath": "posts/personal/stories/had-i-had-envelope/had-i-had-envelope.md"
+  },
+  {
+    "slug": "sunflower",
+    "type": "linear",
+    "title": "Sunflower",
+    "series": "Amber Memoirs Series",
+    "language": "en",
+    "preview": "A box she once told him never to open waited in the closet since childhood, holding a promise, an old friend, and a field of sunflowers that never stopped blooming.",
+    "genres": [
+      "Nostalgic",
+      "Bittersweet"
+    ],
+    "image": "posts/personal/stories/sunflower/images/sunflower.jpg",
+    "contentPath": "posts/personal/stories/sunflower/sunflower.md"
   },
   {
     "slug": "voyager-x",
@@ -24,7 +38,7 @@
       "Sci-fi",
       "Horror"
     ],
-    "image": "data/images/horror-jp.jpg",
-    "contentPath": "data/personal-stories/voyager-x.json"
+    "image": "data/personal-stories/voyager-x/images/horror-jp.jpg",
+    "contentPath": "data/personal-stories/voyager-x/voyager-x.json"
   }
 ]
