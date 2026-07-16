@@ -4,7 +4,7 @@ language: en
 genres: Nostalgic, Bittersweet
 image: sunflower.jpg
 description: A box she once told him never to open waited in the closet since childhood, holding a promise, an old friend, and a field of sunflowers that never stopped blooming.
-date: 2026-07-16
+date: 2018-06-13
 ---
 
 On a certain day in a certain summer, I had just graduated from school. I went back to my village to greet my parents. My time in the city was finally over, and I could finally relax for a few moments.
@@ -202,5 +202,7 @@ I will stay strong… And live.
 The flowers I had bought, I spread across that same field. In the middle of it, beside the hole I once dug, sunflowers greeted me.
 
 Soon, it will bloom too — the *Sunflower* I planted…
+
+![The box, closed once more](posts/personal/stories/sunflower/images/box.jpg)
 
 — END —
