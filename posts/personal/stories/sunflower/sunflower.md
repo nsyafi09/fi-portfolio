@@ -46,7 +46,7 @@ She climbed into the car, waving her hand out the window.
 
 Come to think of it, what expression did she make that time?
 
-After that, I tried not to remember Himawari's farewell gift, and hid it in my closet, so that I wouldn't look back, and could become a stronger person one day.
+After that, I tried not to remember her farewell gift, and hid it in my closet, so that I wouldn't look back, and could become a stronger person one day.
 
 Inside the box, it felt like something more was stuffed within. I scratched at its surface and found that its floor was actually another lid, hiding a deeper part. So I opened it.
 
@@ -54,7 +54,7 @@ Oof — there we go. "Long time no see."
 
 I jolted back. Gahh?! She came right out of the box.
 
-Looking exactly the same as when she was a child, Himawari-chan was angry.
+Looking exactly the same as when she was a child, she was angry.
 
 "You completely forgot about the box I gave you, didn't you?!"
 
@@ -74,7 +74,7 @@ She nodded, smirking. "Alright."
 
 "Isn't that what usually happens in this kind of situation." Hehehe.
 
-She acted like a genie, waving her hand as if conjuring something supernatural. In my mind, I thought, Himawari hadn't changed a bit.
+She acted like a genie, waving her hand as if conjuring something supernatural. In my mind, I thought, she hadn't changed one bit.
 
 "Go ahead, say anything you want."
 
@@ -90,9 +90,9 @@ She took something out of her pocket.
 
 A thousand yen was basically nothing, let alone enough to be rich. Uhh…
 
-"So what?! You can still splash out at Sagamiya with two 500 yen coins!"
+"So what?! You can still splash out at Granny's Candy store with two 500 yen coins!"
 
-She said, her face reddening. Also, Sagamiya candy store had closed down years ago… As I thought, some things about Himawari-chan would never change.
+She said, her face reddening. Also, Granny's candy store had closed down years ago… As I thought, some things about her would never change.
 
 "Okay, and your second wish is?"
 
@@ -190,13 +190,13 @@ The next day, I decided to visit the forest once more. I bought flowers, and bro
 
 The view was different. Yesterday there had been no flowers at all. Today, a rainbow of colors spread across the field inside the forest — a beautiful sight.
 
-Before I met Himawari, I cried a lot, failed at everything, and convinced myself that I was a failure. But her words, her voice, stopped me from thinking that way. I realized how tiny my worries really were.
+Before I met her, I cried a lot, failed at everything, and convinced myself that I was a failure. But her words, her voice, stopped me from thinking that way. I realized how tiny my worries really were.
 
 The day she moved away was the day she died in a car accident.
 
 I could still remember her smile before she left. It wasn't the cold stare or the angry ones she usually greeted me with. It was a sincere, beautiful smile, her eyes crinkled — the last smile she ever gave me.
 
-I have to keep her last words. Himawari, Himawari... I loved you! Even now, you will still be here in my heart.
+I have to keep her last words. ...I loved you! Even now, you will still be here in my heart.
 
 I will stay strong… And live.
 
